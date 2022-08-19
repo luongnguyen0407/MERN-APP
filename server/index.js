@@ -6,7 +6,7 @@ require("dotenv").config();
 
 connectDB();
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 4567;
 
 app.use(express.json());
 app.use("/api/v1/auth", authRouter);

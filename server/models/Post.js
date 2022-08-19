@@ -16,7 +16,6 @@ const postSchema = new Schema({
   },
   url: {
     type: String,
-    require: true,
   },
   user: {
     type: Schema.Types.ObjectId,
